@@ -9,16 +9,16 @@ int GetNumber(string text)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int GetProElements (int A)
+int GetMultiplyElements(int A)
 {
     int result = 1;
-    for (int i = 1; i <=A; i++)
+    for (int i = 1; i <= A; i++)
     {
-        result *=i; // result = result * i;
+        result *= i; // result = result * i;
     }
     return result;
 }
 int num = GetNumber("Введите число А: ");
-System.Console.WriteLine($"Произведение чисел от 1 до {num} = {GetProElements(num)}");
+System.Console.WriteLine($"Произведение чисел от 1 до {num} = {GetMultiplyElements(num)}");
 
 
